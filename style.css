@@ -1,0 +1,64 @@
+@media screen and (max-width: 768px) {
+    img {
+        width: 100px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(35, 95, 208, 0.067);
+    color: darkblue;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    border-radius: 10%;
+}
+
+.container {
+    display: flex; 
+    height: 100vh; 
+}
+
+.project, .Education {
+    flex: 1; /* يجعل كل div يأخذ نصف الشاشة */
+    padding: 20px;
+    text-align: center;
+}
+
+/* إضافة ألوان للخلفية */
+.project {
+    background-color: #e6cef7;
+}
+
+.Education {  /* تم تصحيح اسم الكلاس */
+    background-color: #ced4f0;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* يجعل الصور بحجم مربع تلقائي */
+    gap: 10px; /* تباعد بين الصور */
+    margin-top: 15px;
+    justify-content: center; /* توسيط الصور */
+}
+
+/* جعل الصور مربعة ومتناسقة 
+.image-grid img {
+    width: 100px;  
+    height: 80px;  الطول نفس العرض لجعلها مربعة 
+    object-fit: cover; يضمن عدم تشويه الصورة 
+    border-radius: 8px;  إضافة زوايا دائرية ناعمة 
+*/
+
+a {
+    color: purple;
+    text-decoration: none;
+}
